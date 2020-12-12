@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="registration-container">
+        <div class="first-half">
+            <h2 style=" color: rgb(76, 159, 236);">General Information</h2>
+            <form class="form-container">
+                <select class="select-anything" id="selectorT">
+                    <option disabled selected>Title</option>
+                    <option >მართლა არვიცი</option>
+                    <option>რა უნდა</option>
+                    <option>ჩავწერო</option>
+                </select>
+                <div style="margin: 15px 0px; display: flex; justify-content: space-between;">
+                    <input type="text" placeholder="First name" style="width: 40%;" id="fname">
+                    <input type="text" placeholder="Last name" id="lname" maxlength="15">
+                </div>
+                <select class="select-anything" id="selectorP">
+                    <option disabled selected>Position</option>
+                    <option >Front end Developer</option>
+                    <option >Back end Developer</option>
+                    <option >Full stack Developer</option>
+                </select>
+                <input type="text" placeholder="Company" style="margin: 15px 0px;" id="company">
+                <div style=" display: flex; justify-content: space-between; margin: 15px 0px;">
+                    <input type="text" placeholder="Busines area" style="width: 60%; padding: 0px;" maxlength="10">
+                    <select id="selectorE" class="select-anything">
+                        <option disabled selected>employees</option>
+                        <option >აქაც არვიცი</option>
+                        <option >რა ჩავწერო</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <div class="second-half">
+            <h2 style=" color: rgb(185, 166, 232);">Contact Details</h2>
+            <form class="form-container">
+                <input id="str" type="text" placeholder="Street + Nr" style="margin: 15px 0px; background-color: rgb(72, 53, 212);">
+                <input id="addit" type="text" maxlength="30" placeholder="Adittional information" style="margin:15px 0px; background-color:rgb(72, 53, 212);">
+                <div class="select-anything">
+                    <input id="zip" maxlength="6" type="text" placeholder="Zip Code" style="background-color: rgb(72, 53, 212);">
+                    <select style="background-color: rgb(72, 53, 212);" id="selectorPl" class="select-anything">
+                        <option disabled selected>place</option>
+                        <option >school</option>
+                        <option >Home</option>
+                        <option >Work</option>
+                    </select>
+                </div>
+                <select id="selectorC" class="select-anything" style="background-color: rgb(72, 53, 212);" id="selector">
+                    <option disabled selected>Country</option>
+                    <option >Georgia</option>
+                    <option >English</option>
+                    <option >Russia</option>
+                    <option >France</option>
+                </select>
+                <div class="select-anything" >
+                    <input type="text" placeholder="Code+" style="background-color: rgb(72, 53, 212);" id="code">
+                    <input type="text" placeholder="Phone Number" style="background-color: rgb(72, 53, 212);" id="phone">
+                </div>
+                <input type="text" id="email" placeholder="Your Email" style="margin: 15px 0px; background-color: rgb(72, 53, 212);" >
+                <div style="margin-bottom: 10px;margin-top: 10px;">
+                    <input type="checkbox" style="background-color: rgb(72, 53, 212);" id="check">
+                    <label >I do accept the <a href="Terms and conditions ">Terms And Conditions</a> for your site.</label>
+                </div>
+                <div class="register-button" onclick="validation()" >Register Badge</div>
+            </form>
+        </div>
+    </div>
+    <div class="popup" id="menu" onclick="closeMenu()">
+        <span class="popup-text">წარმატებული რეგისტრაცია</span>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>

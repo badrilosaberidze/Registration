@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(142, 184, 233);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registration-container{
+    display: flex;
+    margin-top: 55px;
+}
+
+.first-half{
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    display: inline-flex;
+    flex-direction: column;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.second-half{
+    padding: 20px;
+    background-color: rgb(72, 53, 212);
+    display: inline-flex;
+    flex-direction: column;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+.select-anything{
+    margin: 15px 0px;
+    color:rgb(123, 98, 218);
+}
+select{
+    border: unset;
+    border-bottom: 2px solid rgb(231, 231, 231);
+    
+}
+select:focus{
+    outline: unset;
+}
+input{
+    border: unset;
+    border-bottom: 2px solid rgb(231, 231, 231);
+    color:rgb(123, 98, 218);
+}
+input[type="text"]:focus{
+    outline: unset;
+}
+.register-button{
+    padding: 10px 10px;
+    font-size: 15px;
+    background-color: rgb(255, 255, 255);
+    max-width: fit-content;
+    border-radius: 20px;
+    color: rgb(157, 144, 130);
+}
+.register-button:hover{
+    background-color: rgb(172, 168, 168);
+    cursor: pointer;
+    color: rgb(241, 241, 240);
+}
+.popup{
+    position: fixed;
+    background-color: rgb(177, 175, 175);
+    padding: 50px;
+    margin: auto;
+    display: none;
+    border-radius:13px;
+}
+.popup-text{
+    font-size:25px;
+    color: red;
+}
+::placeholder{
+    opacity: 1;
+    color: rgb(123, 98, 218);
+}
